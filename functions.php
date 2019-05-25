@@ -9,6 +9,8 @@
         // Include Scripts
         wp_enqueue_script('jquery', get_template_directory_uri() . '/vendor/jquery/jquery.js', array(), '', true);
         wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.js', array(), '', true);
+        wp_enqueue_script('bootstrapvalidation', get_template_directory_uri() . '/js/jqBootstrapValidation.js', array(), '', true);
+        wp_enqueue_script('contactmejs', get_template_directory_uri() . '/js/contact_me.js', array(), '', true);
         wp_enqueue_script('cleanjs', get_template_directory_uri() . '/js/clean-blog.js', array(), '1.0.0', true);
 }
 
@@ -24,6 +26,13 @@ function clean_setup_theme() {
     register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'THEMENAME' ),
     ) );
+
+    // Custom Logo
+    add_theme_support( 'custom-logo', array(
+        'height' => 50,
+        'width' => 50,
+        'flex-width' => true,
+    ));
 }
 
 add_action('after_setup_theme', 'clean_setup_theme');
@@ -53,5 +62,8 @@ add_action('widgets_init', 'clean_init_widgets');
 // Customizer File
 require get_template_directory() . '/inc/customizer.php';
 
+
+add_theme_support('custom-background');
+add_theme_support('custom-header');
 
 ?>

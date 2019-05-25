@@ -8,7 +8,7 @@
  * http://ReactiveRaven.github.com/jqBootstrapValidation/
  */
 
-(function($) {
+jQuery(document).ready(function($) {
 
   var createdElements = [];
 

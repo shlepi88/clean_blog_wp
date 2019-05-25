@@ -68,8 +68,6 @@ img::-moz-selection {
   border-bottom: 1px solid #e9ecef;
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  #mainNav .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end !important; }
   #mainNav .navbar-brand {
     font-weight: 800;
     color: #343a40; }
