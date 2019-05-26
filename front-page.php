@@ -18,5 +18,5 @@
   <?php get_template_part('template-parts/posts'); ?>
 
   <?php get_template_part('template-parts/sidebar'); ?>
-  <img src="<?php header_image(); ?>" alt="">
+
 <?php get_footer(); ?>

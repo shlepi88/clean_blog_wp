@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="<?php echo home_url(); ?>">
         <?php the_custom_logo(); ?>
         <p><?php bloginfo('name'); ?></p>
       </a>

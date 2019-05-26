@@ -20,12 +20,12 @@
             <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
               <?php the_author(); ?>
             </a>
-            on <?php the_date(); ?></p>
+            on <?php echo get_the_date(); ?></p>
         </div>
         <hr>
         <?php endwhile; ?>
           <?php else : ?>
-          <h2><?php echo __('No Posts Found!') ?></h2>
+          <h2><?php __('No Posts Found!') ?></h2>
         <?php endif; ?>
       
       </div>
